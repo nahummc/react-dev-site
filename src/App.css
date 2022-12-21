@@ -3,13 +3,3 @@
   background-color: aliceblue;
 }
 
-.img-thumbnail {
-  width: 80%;
-}
-
-.aboutme {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 10px;
-}

@@ -7,7 +7,6 @@ import Weather from './components/Weather.js';
 import ContactForm from './components/ContactForm.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer.js'
-import FaReact from 'react-icons/fa'
 
 
 
