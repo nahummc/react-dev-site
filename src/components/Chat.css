@@ -1,0 +1,10 @@
+.chat-header {
+    color: white;
+    background-color: rgb(139, 139, 139);
+}
+
+.chat-box {
+    border: 2px solid black;
+    height: 50vh;
+    background-color: antiquewhite;
+}

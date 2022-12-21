@@ -8,8 +8,8 @@ import Button from 'react-bootstrap/Button';
 // import { env } from 'process';
 
 
-//ran out of api credits, I am now going to scrape data for it
-// const API_key = 'a0195a7cd2ead63ca214d473be267149'
+// Setup an openweather account here 
+// https://home.openweathermap.org/users/sign_in and use an API key in the following
 const API_key = process.env.REACT_APP_MY_ENV_VARIABLE;
 // console.log(process.env.REACT_APP_TEST)
 
@@ -41,21 +41,17 @@ function Weather() {
 // this works, just im poor
 async function fetchWeather() {
   const response = await fetch(weatherAPI);
-  const data = await response.json();
-  // setWeatherData(data);
-  // setCity(data["name"])
-  // setConditions(data["weather"][0]["main"])
-  
+  const data = await response.json();  
   console.log(data['cod'])
   if (data['cod'] === 401) {
     setCity('Fredericton')
     setConditions('Overcast')
     setTemperature('-1')   
   } else {
-
+    var celsius = '&8451;'
     setCity(data["name"]);
     setConditions(data["weather"][0]["main"]);
-    setTemperature(data["main"]["temp"])
+    setTemperature(data["main"]["temp"] + ' degrees celsius')
     // console.log(data)
     // console.log(data["weather"][0]["main"])
     // console.log(data["weather"][0]["main"])
@@ -93,7 +89,7 @@ async function fetchWeather() {
 
 
 
-      <h6>This was hooked up to <a href='https://openweathermap.org'>OpenWeathermap.org's</a> API, however I ran out of credits :( <br/> This will potentially be up again someday</h6>
+      {/* <h6>This is/was hooked up to <a href='https://openweathermap.org'>OpenWeathermap.org's</a> API, however I ran out of credits :( <br/> This will potentially be up again someday</h6> */}
       {/* <h1>Help me</h1> */}
       {/* <p>{weatherData}</p> */}
       {/* <UseJoke /> */}
