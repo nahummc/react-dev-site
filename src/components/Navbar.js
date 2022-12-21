@@ -13,7 +13,7 @@ function BasicNav() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="contact">Contact</Nav.Link>
-            {/* <Nav.Link href="chat">ChatGPT</Nav.Link> */}
+            <Nav.Link href="weather">Weather</Nav.Link>
             {/* <Nav.Link href="#link">About</Nav.Link> */}
             <NavDropdown title="More" id="basic-nav-dropdown">
               {/* <NavDropdown.Item href="contact">Contact me</NavDropdown.Item> */}
