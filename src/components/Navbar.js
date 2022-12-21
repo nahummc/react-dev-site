@@ -22,7 +22,7 @@ function BasicNav() {
               {/* <NavDropdown.Item href="#action/3.3">Chat</NavDropdown.Item> */}
               {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="https://github.com/nahummc" target="_blank">
-                Github
+                Checkout my Github
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

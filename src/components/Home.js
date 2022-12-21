@@ -4,6 +4,8 @@ import ListedSkills from './List.js';
 // import Slides from './Slides.js';
 import Image from 'react-bootstrap/Image'
 import SlideButton from './SlideButton.js';
+import './Home.css';
+
 
 function Home() {
   return (
@@ -19,13 +21,14 @@ function Home() {
         <div className='aboutme'>
 
         <Image src={require("../images/fish.jpg")} className="img-thumbnail"/>
-        <SlideButton id="aboutme"/>
+        <SlideButton className="slide-btn" id="aboutme"/>
         </div>
 
       {/* Images of myself/technologies I use? */}
 
         <ListedSkills />
-    </div>
+        
+        </div>
   )
 }
 
