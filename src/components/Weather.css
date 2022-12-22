@@ -21,6 +21,7 @@
 .col {
     display: flex;
     flex-direction: column;
+    flex-grow: 4;
 }
 
 .condition {
@@ -33,7 +34,7 @@
     font-size: 1em;
     margin-left: auto;
     margin-bottom: 1em;
-    margin-top:-10;
+    /* margin-top: 0; */
 }
 
 .get-weather-btn {

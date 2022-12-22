@@ -37,6 +37,7 @@ async function fetchWeather() {
   const response = await fetch(weatherAPI);
   const data = await response.json();  
   console.log(data['cod'])
+  // if api is down/not working populate hard coded info
   if (data['cod'] === 401) {
     setCity('Fredericton')
     setConditions('Overcast')

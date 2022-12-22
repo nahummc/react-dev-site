@@ -7,13 +7,15 @@ function BasicNav() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Nahum Collicott</Navbar.Brand>
+        <Navbar.Brand href="/">Nahum Collicott</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="contact">Contact</Nav.Link>
             <Nav.Link href="weather">Weather</Nav.Link>
+            <Nav.Link href="todo">Todo app</Nav.Link>
+            {/* <Nav.Link href="social">Socials</Nav.Link> */}
             {/* <Nav.Link href="#link">About</Nav.Link> */}
             <NavDropdown title="More" id="basic-nav-dropdown">
               {/* <NavDropdown.Item href="contact">Contact me</NavDropdown.Item> */}
