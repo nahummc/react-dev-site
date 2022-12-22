@@ -6,7 +6,9 @@ import Button from 'react-bootstrap/Button';
 // https://home.openweathermap.org/users/sign_in and use an API key in the following variable
 
 // also allow the browswer to get your location data
-const API_key = process.env.REACT_APP_MY_ENV_VARIABLE;
+const API_key = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+// const API_key = API_KEY_GOES_HERE;
+
 
 function Weather() {
   const [lat, setLat] = useState([]);
@@ -63,6 +65,9 @@ async function fetchWeather() {
           <h4 className='temp'>{temperature}</h4>
           <h4 className='condition'>{conditions}</h4>
         </div>
+        {/* <div className='hourly'>
+          <p>hello</p>
+        </div> */}
       </div>
 
 
