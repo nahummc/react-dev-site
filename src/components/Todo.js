@@ -26,8 +26,8 @@ function Todo() {
   };
 // BUG - IF TODO OBJ HAS THE SAME NAME AS ANOTHER IN THE LIST, THE DELETE BUTTON WILL DELETE BOTH/ALLENTRIES OF THAT NAME. POSSIBLE FIX WITH INCREMENTING ID PROP?
   return (
-    <div className=''>
-      <h1>Updating state</h1>
+    <div className='hello'>
+      <h1>Todo-List</h1>
         <TodoInput className='input' todo={todo} setTodo={setTodo} addTodo={addTodo} />
         {/* passing todos and the method delete todos as props */}
         <TodoList list={todos} remove={deleteTodo} />

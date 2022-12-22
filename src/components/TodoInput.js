@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const TodoInput = ({ todo, setTodo, addTodo }) => {
     return (
         <div className="input-wrapper">
@@ -12,9 +14,11 @@ const TodoInput = ({ todo, setTodo, addTodo }) => {
             setTodo(e.target.value);
           }}
         />
+        
         <button className="add-button" onClick={addTodo}>
           Add
         </button>
+
       </div>
     );
 }
