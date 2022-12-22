@@ -10,20 +10,21 @@ function Todo() {
     const addTodo = () => {
         // make sure todo isnt empty
         if (todo !== "") {
-        setTodos([...todos, todo]);
-        setTodo("");
+        // map current todos along with todo to the todos
+            setTodos([...todos, todo]);
+            setTodo("");
         } else {
             alert("please enter in a task")
         }
     };
 
   const deleteTodo = (text) => {
-    const newTodos = todos.filter((todo) => {
-      return todo !== text;
+        const newTodos = todos.filter((todo) => {
+        return todo !== text;
     });
     setTodos(newTodos);
   };
-
+// BUG - IF TODO OBJ HAS THE SAME NAME AS ANOTHER IN THE LIST, THE DELETE BUTTON WILL DELETE BOTH/ALLENTRIES OF THAT NAME. POSSIBLE FIX WITH INCREMENTING ID PROP?
   return (
     <div className=''>
       <h1>Updating state</h1>

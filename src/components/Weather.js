@@ -43,6 +43,7 @@ async function fetchWeather() {
     setConditions('Overcast')
     setTemperature('-1')   
   } else {
+    // there must be a better way to parse response for the data
     setCity(data["name"]);
     setConditions(data["weather"][0]["main"]);
     setTemperature(data["main"]["temp"] + ' degrees celsius')
@@ -53,7 +54,7 @@ async function fetchWeather() {
   function handleClick() {
     fetchWeather();  
   }
-  
+  // I need to style the card better
   return (
     <div>
       <div className='weather-card'>

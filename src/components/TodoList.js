@@ -5,6 +5,10 @@ import Button from 'react-bootstrap/Button';
 const TodoList = ({ list, remove }) => {
     return (
         <div className='list-wrapper'>
+            {/*
+             if list (prop passed as todos) is not 0,
+             map list entry and index to li component
+             */}
         {list?.length > 0 ? (
             <ul className="todo-list">
               {list.map((entry, index) => (
@@ -18,6 +22,7 @@ const TodoList = ({ list, remove }) => {
                 </div>
               ))}
             </ul>
+            // else display nothing
           ) : (
               <div className="empty">
               <p>No task found</p>

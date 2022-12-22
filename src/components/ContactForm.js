@@ -3,6 +3,12 @@ import { Formik } from 'formik';
 import './ContactForm.css';
 
 function ContactForm() {
+
+    //make a submit function?
+
+
+
+
   return (
       <div className='contact-form'>
         <h1>Reach out!</h1>
@@ -29,7 +35,8 @@ function ContactForm() {
            
          }, 400);
        }}
-     >
+      //  end of formik label
+     > 
        {({
          values,
          errors,
