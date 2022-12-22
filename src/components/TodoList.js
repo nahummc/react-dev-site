@@ -18,7 +18,7 @@ const TodoList = ({ list, remove }) => {
                 <Button className="delete-button btn-danger"
                     onClick={() => {
                       remove(entry);
-                    }}>Delete</Button>
+                    }}>X</Button>
                 </div>
               ))}
             </ul>

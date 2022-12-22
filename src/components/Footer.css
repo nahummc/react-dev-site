@@ -7,4 +7,6 @@
    /* background-color: red; */
    /* color: white; */
    text-align: center;
+   border-top: 2px solid gray;
+   border-bottom: 2px solid gray;
 }
