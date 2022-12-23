@@ -5,6 +5,7 @@ import './ContactForm.css';
 function ContactForm() {
 
     //make a submit function?
+    // checkout NewContact component, port here?
 
 
 
