@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 // https://home.openweathermap.org/users/sign_in and use an API key in the following variable
 
 // also allow the browswer to get your location data
-const API_key = process.env.REACT_APP_MY_ENV_VARIABLE;
+const API_key = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
 
 function Weather() {
   const [lat, setLat] = useState([]);
