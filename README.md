@@ -1,6 +1,6 @@
 This project was created by myself, Nahum Collicott.
 
-It will evetually have links to my socials, connections to two API's (ChatGPT and OpenWeather), and potentially host games I have previously made in python, and remade in javascript.
+It will evetually have links to my socials, connections to two API's (emailjs and OpenWeather), and potentially host games I have previously made in python, and remade in javascript.
 
 
 
@@ -24,7 +24,7 @@ It will evetually have links to my socials, connections to two API's (ChatGPT an
 
 
 
-# below is the auto generated readme thatI might need or want
+# below is the auto generated readme that I might need or want
 # -----------------------------------------------------
 
 # Getting Started with Create React App

@@ -1,5 +1,7 @@
 .list-wrapper {
     /* border: 1px solid red; */
+    margin-right: 2em;
+    /* I need to find a better way to center this */
     
 }
 
@@ -11,20 +13,64 @@
 
 }
 
+.add-button {
+    width: 35%;
+    /* padding: 1em; */
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.input-wrapper {
+    margin: 1.5em
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    width: 4em;   
+}
+
 .todo {
-    border: 1px solid black;
+    /* border: 1px solid black;
     margin-top: 1em;
-    margin-right: 2em;
     padding-top: 1em;
     border-radius: 80px;
+    */
+    margin-right: 3em;
+
+    justify-content: center; 
     display: flex;
-    justify-content: center;
+    /* width: 35%; */
+    /* padding: 1em; */
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #548fc6;
+}
+
+.todo:hover {
+    background-color: #4c7faf;
+
 }
     
 
 li {
     list-style: none;
-    padding-top: 0.5em;
+    /* margin-right: 1em; */
     padding-right: 1em;
     /* align-items: center; */
     font-weight: 600;
