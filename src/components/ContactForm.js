@@ -4,8 +4,7 @@ import './ContactForm.css';
 
 function ContactForm() {
 
-    //make a submit function?
-    // checkout NewContact component, port here?
+  // this component is no longer used, but I might rework it and include formik somewhere else
 
 
 

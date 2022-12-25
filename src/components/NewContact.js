@@ -17,46 +17,35 @@ function NewContact() {
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
         let msg = document.getElementById('message').value;
+        let subject = document.getElementById('subject').value;
 
-        name = name + ' reply to ' + email
-        console.log(name)
-        console.log(email)
+        let newMsg = "Subject: " + subject + '\n' + msg;
 
+        name = name + ' reply to: ' + email
+        // console.log(name)
+        // console.log(email)
         var contactParams ={
             from_name: name,
             from_email: email,
-            message: msg,
+            message: newMsg,
         };
-
         // check that all forms aren't null
         if (name === '' || email === '' || msg === '') {
             // console.log('form is empty');
             alert("please fill out all fields in the form")
-
             // else if containing email regex?
         } else {
             emailjs.send(serviceID, templateID, contactParams, publicKey);
+            clearForm();
         }
-
-
-
-        // send email
-        
-        
-
+        // prevent form from reloading page        
         e.preventDefault();
-        clearForm();
     }
 
     function clearForm() {
-
         let form = document.getElementById('myForm')
         form.reset();
     }
-
-
-
-
 
   return (
     <>
@@ -71,7 +60,7 @@ function NewContact() {
 
 
     <label>Email</label>
-    <input type="text" id="email" name="email" placeholder="Email"/>
+    <input type="email" id="email" name="email" placeholder="Email"/>
 
     <label>Subject</label>
     <input type="text" id="subject" name="subject" placeholder="Subject"/>

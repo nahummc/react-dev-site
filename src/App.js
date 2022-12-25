@@ -29,6 +29,7 @@ function App() {
         <Route path='/contact' element={<NewContact />}></Route>
         <Route path='/todo' element={<Todo />}></Route>
         {/* <Route path='/chat' element={<Chat />}></Route> */}
+        {/*  */}
       </Routes>
       </Router>
       <br/><br/>

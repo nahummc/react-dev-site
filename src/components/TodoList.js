@@ -15,7 +15,7 @@ const TodoList = ({ list, remove }) => {
                   <div className="todo">
                     <div className='container'>
 
-                  <li key={index}> {entry} </li>
+                      <li key={index}> {entry} </li>
                     </div>
 
                 <Button className="delete-button btn-danger"
