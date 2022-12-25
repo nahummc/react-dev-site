@@ -34,10 +34,6 @@ function App() {
       </Router>
       <br/><br/>
       <Footer />
-
-      {/* <Home /> */}
-
-
     </div>
   );
 }

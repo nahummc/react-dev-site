@@ -24,7 +24,7 @@ function Home() {
         <SlideButton className="slide-btn" id="aboutme"/>
         </div>
 
-      {/* Images of myself/technologies I use? */}
+      {/* Images of technologies I use/socail links? */}
 
         <ListedSkills />
         

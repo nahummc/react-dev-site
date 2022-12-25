@@ -10,3 +10,11 @@
    border-top: 2px solid gray;
    border-bottom: 2px solid gray;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
