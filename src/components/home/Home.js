@@ -12,19 +12,20 @@ function Home() {
        <br/>
 
         <InfoCard />
+        <div className='aboutme'>
 
         
         {/* Carouselof photos of myself */}
         {/* <Slides /> */}
-        <div className='aboutme'>
 
         <Image src={require("../../images/fish.jpg")} className="img-thumbnail"/>
         <SlideButton className="slide-btn" id="aboutme"/>
         </div>
 
       {/* Images of technologies I use/socail links? */}
-
-        <ListedSkills />
+        <div className='list-wrapper'>
+        <ListedSkills className='list-group-item'/>
+        </div>
         
         </div>
   )
