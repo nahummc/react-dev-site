@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 
-function SlideButton() {
+
+const SlideButton = () => {
   const [open, setOpen] = useState(false);
 
   return (

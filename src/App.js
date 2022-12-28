@@ -1,15 +1,15 @@
 // import logo from './logo.svg';
 import './App.css';
-import BasicNav from './components/Navbar.js';
+import BasicNav from './components/navbar/Navbar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/Home.js';
-import Weather from './components/Weather.js';
+import Home from './components/home/Home.js';
+import Weather from './components/weather/Weather.js';
 // old version of contact form
-// import ContactForm from './components/ContactForm.js';
+// import ContactForm from './components/contact/ContactForm.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Footer from './components/Footer.js'
-import Todo from './components/Todo.js';
-import NewContact from './components/NewContact.js';
+import Footer from './components/footer/Footer.js'
+import Todo from './components/todo/Todo.js';
+import NewContact from './components/contact/NewContact.js';
 // import Chat from './components/Chat.js';
 
 

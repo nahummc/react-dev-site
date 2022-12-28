@@ -17,7 +17,7 @@ function Weather() {
   const [temperature, setTemperature] = useState('Temperature')
   const [conditions, setConditions] = useState('Condition')
   
-  function getLocation() {
+  function getLocation(fetchWeTHER, weatehr) {
     navigator.geolocation.getCurrentPosition(function(position) {
       setLat(position.coords.latitude);
       setLong(position.coords.longitude);
@@ -51,6 +51,8 @@ async function fetchWeather() {
     setTemperature(data["main"]["temp"] + ' degrees celsius')
   }
 }
+
+
 
 
   function handleClick() {

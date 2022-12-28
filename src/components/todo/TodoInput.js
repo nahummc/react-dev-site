@@ -2,8 +2,7 @@ import React from 'react';
 
 
 
-const TodoInput = ({ todo, setTodo, addTodo }) => {
-    return (
+const TodoInput = ({ todo, setTodo, addTodo }) => (
         <div className="input-wrapper">
         <input
           type="text"
@@ -21,6 +20,6 @@ const TodoInput = ({ todo, setTodo, addTodo }) => {
 
       </div>
     );
-}
+
 
 export default TodoInput;
