@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import './Calculator.css'
-
+import BigEval from 'bigeval'
 
 //I ripped the structure and the styles, but the logic is all me
 
 function Calculator() {
     const [operation, setOperation] = useState('')
-    const [op1, setOp1] = useState('')
-    const [op2, setOp2] = useState('')
-    const [operator, setOperator] = useState('')
+    const [result, setResult] = useState('')
     
 
     function handleClick(e) {
@@ -22,53 +20,45 @@ function Calculator() {
             var newerOp = newOperation.slice(0, -1)
             setOperation(newerOp)
             console.log(newerOp)
-        } else if (input === 'X' || input === "-" || input == '+') {
-            // first half of the operation
-            // setOperation()
-            // const operation1 = operation
-            // access operation
-            var newOperation = operation;
-            // includ whole thing
-            var newerOp = newOperation.slice(0, )
-            setOperation(newerOp)
+        } 
+        
+        else if (input === 'x') {
+          setOperation(operation + '*')
+
+        }
+      
+        else if (input === '=') {
+            // where the magic happens?
+            var newResult = operation
+
+            var Obj = new BigEval();
+            var result = Obj.exec(newResult)
+
+            console.log(newResult)
+            console.log(result)
+
+            setOperation(operation + ' = ' + result)
             
-            setOp1(operation)
-            console.log(op1)
-            console.log(operation)
+            setResult(result)
 
-            // set operator and first half of state
-            var operatorSymbol = input;
-            setOp1(op1)
-            // console.log(input)
-            // console.log(operation)
-            // add operator to the input
-
-            setOperation(operation + input)
-            setOperator(operatorSymbol)
-
-
-        } else if (input === '=') {
             
             
             
-            console.log(op1)
         
         } else if (input === 'reset') {
             setOperation('')
-            setOperator('')
+            setResult('')
+          
 
         }
 
         else {
-            var newResult = document.getElementsByClassName('result')
-            newResult.value = input
-            // console.log(input);
             setOperation(operation + input)
         }
 
             
             
-            
+            // return input;
     }
 // onClick={handleClick()}
   return (
@@ -77,7 +67,9 @@ function Calculator() {
 
     
       <div class="calc-header">Calculator</div>
-      <input type="text" class="result" value={operation}/>
+      <input type="text" class="result" value={operation}/>      
+      <input type="text" class="answer" value={result}/>
+
       <div class="first-row">
         <input type="button" onClick={handleClick} id='&radic;' name="" value="&radic;" class="global"/>
         <input type="button" onClick={handleClick} id='(' name="" value="(" class="global"/>
@@ -94,7 +86,7 @@ function Calculator() {
         <input type="button" onClick={handleClick} name="" value="4" class="global"/>
         <input type="button" onClick={handleClick} name="" value="5" class="global"/>
         <input type="button" onClick={handleClick} name="" value="6" class="global"/>
-        <input type="button" onClick={handleClick} name="" value="X" class="global"/>
+        <input type="button" onClick={handleClick} name="" value="x" class="global"/>
       </div>
       <div class="fourth-row">
         <input type="button" onClick={handleClick} name="" value="1" class="global"/>
@@ -120,4 +112,4 @@ function Calculator() {
   )
 }
 
-export default Calculator
+export default Calculator;
