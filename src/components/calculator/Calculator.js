@@ -34,31 +34,20 @@ function Calculator() {
             var Obj = new BigEval();
             var result = Obj.exec(newResult)
 
-            console.log(newResult)
-            console.log(result)
+            // console.log(newResult)
+            // console.log(result)
 
-            setOperation(operation + ' = ' + result)
-            
+            // setOperation(operation + ' = ' + result)
             setResult(result)
-
-            
-            
-            
         
-        } else if (input === 'reset') {
+        } else if (input === 'reset' || input === 'C') {
             setOperation('')
             setResult('')
-          
-
         }
 
         else {
             setOperation(operation + input)
         }
-
-            
-            
-            // return input;
     }
 // onClick={handleClick()}
   return (
@@ -71,15 +60,19 @@ function Calculator() {
       <input type="text" class="answer" value={result}/>
 
       <div class="first-row">
-        <input type="button" onClick={handleClick} id='&radic;' name="" value="&radic;" class="global"/>
+        {/* <input type="button" onClick={handleClick} id='&radic;' name="" value="&radic;" class="global"/> */}
         <input type="button" onClick={handleClick} id='(' name="" value="(" class="global"/>
         <input type="button" onClick={handleClick} id=')' name="" value=")" class="global"/>
         <input type="button" onClick={handleClick} name="" value="%" class="global"/>
+        <input type="button" onClick={handleClick} name="" value="sq" class="global grey plus"/>
+        <input type="button" onClick={handleClick} name="" value="C" class="global grey plus"/>
+
       </div>
       <div class="second-row">
         <input type="button" onClick={handleClick} name="" value="7" class="global"/>
         <input type="button" onClick={handleClick} name="" value="8" class="global"/>
         <input type="button" onClick={handleClick} name="" value="9" class="global"/>
+        <input type="button" onClick={handleClick} name="" value="cube" class="global"/>
         <input type="button" onClick={handleClick} name="" value="/" class="global"/>
       </div>
       <div class="third-row">
@@ -87,12 +80,14 @@ function Calculator() {
         <input type="button" onClick={handleClick} name="" value="5" class="global"/>
         <input type="button" onClick={handleClick} name="" value="6" class="global"/>
         <input type="button" onClick={handleClick} name="" value="x" class="global"/>
+        <input type="button" onClick={handleClick} name="" value="n!" class="global"/>
       </div>
       <div class="fourth-row">
         <input type="button" onClick={handleClick} name="" value="1" class="global"/>
         <input type="button" onClick={handleClick} name="" value="2" class="global"/>
         <input type="button" onClick={handleClick} name="" value="3" class="global"/>
         <input type="button" onClick={handleClick} name="" value="-" class="global"/>
+        <input type="button" onClick={handleClick} name="" value="&#8508;" class="global"/>
       </div>
       <div class="conflict">
         <div class="left">
@@ -101,13 +96,13 @@ function Calculator() {
           <input type="button" onClick={handleClick} name="" value="Del" class=" red small white-text top-margin"/>
           <input type="button" onClick={handleClick} name="" value="=" class=" green white-text big top-margin"/>
         </div>
-        <div class="right">
+        {/* <div class="right"> */}
           <input type="button" onClick={handleClick} name="" value="+" class="global grey plus"/>
-          <input type="button" onClick={handleClick} name="" value="reset" class="global grey plus"/>
-        </div>
+          {/* <input type="button" onClick={handleClick} name="" value="reset" class="global grey plus"/> */}
+        {/* </div> */}
 
       </div>
-              <div class="calc-header">Work in progress</div>
+      <div class="calc-header warning">Work in progress</div>
       </div>
   )
 }
