@@ -73,10 +73,10 @@ function Calculator() {
 // onClick={handleClick()}
   return (
       <div class="calc-container">
-        <h1>Collicott Calculator</h1>
+        <h1>Calculator</h1>
 
     
-      <div class="calc-header">Calculator</div>
+      <div class="calc-header"></div>
       <input type="text" class="result" value={operation}/>      
       <input type="text" class="answer" value={result}/>
 

@@ -9,7 +9,8 @@
    text-align: center;
    border-top: 4px solid gray;
    border-bottom: 4px solid gray;
-   margin-top: 20em;
+   margin-top: 10em;
+   padding: 1em 2em;
 }
 
 a {

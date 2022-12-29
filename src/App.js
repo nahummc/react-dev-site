@@ -12,11 +12,16 @@ import Todo from './components/todo/Todo.js';
 import NewContact from './components/contact/NewContact.js';
 import Calculator from './components/calculator/Calculator.js';
 import NotFound from './components/404/NotFound.js';
+import Login from './components/auth/Login.js'
+import Signup from './components/auth/Signup.js'
 // import Chat from './components/Chat.js';
+import { useState } from 'react';
 
 
 
 function App() {
+
+  const [token, setToken] = useState();
 
   
   return (
@@ -32,6 +37,8 @@ function App() {
         <Route path='/contact' element={<NewContact />}></Route>
         <Route path='/todo' element={<Todo />}></Route>
         <Route path='/calc' element={<Calculator />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/signup' element={<Signup />}></Route>
         {/* <Route path='/chat' element={<Chat />}></Route> */}
         {/*  */}
       </Routes>

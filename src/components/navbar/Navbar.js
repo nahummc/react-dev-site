@@ -16,6 +16,7 @@ function BasicNav() {
             <Nav.Link href="weather">Weather</Nav.Link>
             <Nav.Link href="todo">Todo app</Nav.Link>
             <Nav.Link href="calc">Calculator</Nav.Link>
+            <Nav.Link href="login">Login</Nav.Link>
             
             <NavDropdown title="More" id="basic-nav-dropdown">
               {/* <NavDropdown.Item href="contact">Contact me</NavDropdown.Item> */}

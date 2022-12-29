@@ -68,7 +68,7 @@ function NewContact() {
     <label>Message</label>
     <input type="text" id="message" name="message" placeholder="Type a message"/>
     
-<br/>
+{/* <br/> */}
     <button className='submit-btn' onClick={sendEmail}>Click me</button>
 
     </form>

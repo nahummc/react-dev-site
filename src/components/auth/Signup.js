@@ -1,11 +1,9 @@
 import React from 'react'
-import './Login.css';
 
-function Login() {
-
+function Signup() {
   return (
     <div>
-        <h1>Login page</h1>
+        <h1>Signup page</h1>
 
         <div className='form-wrapper'>
 
@@ -14,10 +12,15 @@ function Login() {
 <label>Username</label>
 <input type="text" id="name" name="name" placeholder="Name"/>
 
+<label>Email</label>
+<input type="text" id="name" name="name" placeholder="Name"/>
+
 
 <label>Password</label>
 <input type="password" id="password" name="password" placeholder="password"/>
 
+<label>Re-enter password</label>
+<input type="password" id="password" name="password" placeholder="password"/>
 
 
 {/* <br/> */}
@@ -31,4 +34,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Signup
