@@ -8,6 +8,9 @@ function Calculator() {
     const [operation, setOperation] = useState('')
     const [result, setResult] = useState('')
     
+  // turn into switch sometime
+
+
 
     function handleClick(e) {
         const input = e.target.value;
@@ -33,17 +36,35 @@ function Calculator() {
 
             var Obj = new BigEval();
             var result = Obj.exec(newResult)
-
+            
             // console.log(newResult)
             // console.log(result)
-
+            
             // setOperation(operation + ' = ' + result)
             setResult(result)
-        
-        } else if (input === 'reset' || input === 'C') {
+            
+          } else if (input === 'reset' || input === 'C') {
             setOperation('')
             setResult('')
-        }
+          }
+        // new math functions    
+          else if (input === 'sq') {
+            // const squared = '**'
+            setResult(operation * operation)
+          }
+
+          else if (input === 'cube') {
+            // const squared = '**'
+            setResult(operation * operation * operation)
+          }
+
+          else if (input === 'ℼ') {
+            const pi= 3.14159265359;
+            setResult(operation * pi)
+          }
+          else if (input === 'n!') {
+            setOperation(operation + '!')
+          }
 
         else {
             setOperation(operation + input)
@@ -102,7 +123,7 @@ function Calculator() {
         {/* </div> */}
 
       </div>
-      <div class="calc-header warning">Work in progress</div>
+      {/* <div class="calc-header warning">Work in progress</div> */}
       </div>
   )
 }
