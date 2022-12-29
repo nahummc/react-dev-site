@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Footer from './components/footer/Footer.js'
 import Todo from './components/todo/Todo.js';
 import NewContact from './components/contact/NewContact.js';
+import Calculator from './components/calculator/Calculator.js';
+import NotFound from './components/404/NotFound.js';
 // import Chat from './components/Chat.js';
 
 
@@ -24,15 +26,16 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />}></Route>
+        <Route path='*' element={<NotFound />}></Route>
         <Route path='/weather' element={<Weather />}></Route>
         {/* <Route path='/contact' element={<ContactForm />}></Route> */}
         <Route path='/contact' element={<NewContact />}></Route>
         <Route path='/todo' element={<Todo />}></Route>
+        <Route path='/calc' element={<Calculator />}></Route>
         {/* <Route path='/chat' element={<Chat />}></Route> */}
         {/*  */}
       </Routes>
       </Router>
-      {/* <br/><br/> */}
       <Footer />
     </div>
   );

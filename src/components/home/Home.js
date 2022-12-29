@@ -24,7 +24,7 @@ function Home() {
 
       {/* Images of technologies I use/socail links? */}
         <div className='list-wrapper'>
-        <ListedSkills className='list-group-item'/>
+          <ListedSkills className='list-group-item'/>
         </div>
         
         </div>
