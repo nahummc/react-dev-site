@@ -15,13 +15,13 @@ import NotFound from './components/404/NotFound.js';
 import Login from './components/auth/Login.js'
 import Signup from './components/auth/Signup.js'
 // import Chat from './components/Chat.js';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
 
 function App() {
 
-  const [token, setToken] = useState();
+  // const [token, setToken] = useState();
 
   
   return (

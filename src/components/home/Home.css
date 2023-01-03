@@ -30,8 +30,8 @@
   /* align-items: center; */
 }
 
-.list-group-item {
-
+.infocard {
+  margin-top: 2em;
 }
 
 @media only screen and (max-width: 600px) {

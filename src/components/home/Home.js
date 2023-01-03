@@ -9,9 +9,10 @@ import './Home.css';
 function Home() {
   return (
     <div>
+      {/* Cant figure out how to get this spacing without a br tag :( */}
        <br/>
 
-        <InfoCard />
+        <InfoCard className='infocard' />
         <div className='aboutme'>
 
         
