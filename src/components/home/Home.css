@@ -51,6 +51,17 @@
   }
 }
 
+@media only screen and (max-width: 311px) {
+  .list-wrapper {
+  
+    /* margin-right: 4em; */
+    margin-left: 2em;
+    /* margin-left: auto,; */
+    max-width: 80%;
+    /* align-items: center; */
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .list-wrapper {
   
