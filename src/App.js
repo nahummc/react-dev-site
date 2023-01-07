@@ -14,6 +14,7 @@ import Calculator from './components/calculator/Calculator.js';
 import NotFound from './components/404/NotFound.js';
 import Login from './components/auth/Login.js'
 import Signup from './components/auth/Signup.js'
+import Calendar from './components/todo/Calendar/Calendar';
 // import Chat from './components/Chat.js';
 // import { useState } from 'react';
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='/calc' element={<Calculator />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
+        <Route path='/calendar' element={<Calendar />}></Route>
         {/* <Route path='/chat' element={<Chat />}></Route> */}
         {/*  */}
       </Routes>
