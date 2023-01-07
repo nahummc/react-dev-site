@@ -48,7 +48,7 @@ async function fetchWeather() {
     // there must be a better way to parse response for the data
     setCity(data["name"]);
     setConditions(data["weather"][0]["main"]);
-    setTemperature(data["main"]["temp"] + ' degrees celsius')
+    setTemperature(data["main"]["temp"] + '°C')
   }
 }
 
@@ -62,8 +62,8 @@ async function fetchWeather() {
   return (
     <div>
       <div className='weather-card'>
-        <h3 className='city'>{city}</h3>
         <div className='col'>
+        <h3 className='city'>{city}</h3>
           <h4 className='temp'>{temperature}</h4>
           <h4 className='condition'>{conditions}</h4>
         </div>
