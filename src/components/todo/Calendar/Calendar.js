@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Calendar.css';
 
 function Calendar() {
     //here goes 
@@ -80,11 +81,34 @@ function Calendar() {
         const dayStr = numDaysInMonth + "" 
         console.log(dayStr);
         
-        
+      console.log(days)
+
+        // turn into a function to call and set state for days
+        // make the inputs
+        let html = ""
+        for (let i = 1; i < days / 1 + 1; i++) {
+          // document.getElementsByClassName('days').write
+            html += `<input type="button" name="" value="${i}" class="day"/>`
+            // html += `<button type="button" name="" value="${i}" class="day">${i}</button>`
+
+            // console.log(html)
+        }
+
+          // insert inputs int html
+        const dayTag = document.getElementById("days")
+        dayTag.innerHTML = html
+
             setYear(yearStr)
             setMonth(monthStr)
             setDays(dayStr)
     }, []);
+
+
+    
+
+    function handleClick(e) {
+      console.log(e.target.value);
+    }
 
 
 
@@ -97,9 +121,20 @@ function Calendar() {
     <div>
     <h1>Hello</h1>
     <div className='calendar'>
-        <h4 className='year'>{year}</h4>
-        <h4 className='month'>{month}</h4>
-        <h4 className='month'>{days}</h4>
+      {/* <div className='row'>
+      </div> */}
+
+      {/* make buttons that scroll month */}
+
+  <input type="button" onClick={handleClick} id='(' name="" value="(" class="global"/>
+      
+      <h4 className='year'>{year}</h4>
+      <h4 className='month'>{month}</h4>
+      <br />
+      <div className='days' id='days'>
+
+
+        </div>
     </div>
     
     </div>
