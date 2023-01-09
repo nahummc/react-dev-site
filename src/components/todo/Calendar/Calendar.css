@@ -1,6 +1,12 @@
+
+
 .calendar {
     border: 2px solid black;
     padding: 2em 3em;
+    margin: 4em auto;
+    width: 55%;
+    justify-content: center;
+
     /* justify-content: space-around; */
 }
 
@@ -16,17 +22,29 @@
     margin-right: auto;
     margin-top: 3em;
 }
+/* 
+.title {
+    justify-content: center;
+    border: 2px solid black;
+} */
 
 .year {
     float: right;
-    margin-right: 5em;
+    margin-right: 1em;
 
 }
 
 
 .month {
     float: left;
-    margin-left: 5em;
+    margin-left: 1em;
+}
+
+.goLeft {
+    float: left;
+}
+.goRight {
+    float: right;
 }
 
 input {
@@ -37,4 +55,59 @@ input {
 input:hover {
     border-radius: 3px;
     background-color: rgb(0, 104, 200);
+}
+
+@media screen and (max-width:950px){
+    .calendar {
+        min-width: 423px;
+    }
+    .days {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:450px){
+    .calendar {
+        min-width: 300px;
+    }
+    .days {
+        width: 100%;
+        margin: 0;
+    }
+
+    .year {
+        font-size: 1.2em;
+        margin: auto;
+        
+    }
+    .month {
+        font-size: 1.2em;
+        margin: auto;
+        
+    }
+    .title {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .days {
+        margin-top: .5em;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .change-year {
+        margin: 0;
+        
+    }
+
+}
+
+@media  and (max-size:305) {
+    .calendar {
+        width: auto;
+    }
 }
