@@ -6,6 +6,7 @@ notes.txt
 
 # firebase stuff
 firebase-debug.log
+.firebase
 
 # dependencies
 /node_modules
