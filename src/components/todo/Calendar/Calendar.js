@@ -101,7 +101,7 @@ function Calendar() {
             setYear(yearStr)
             setMonth(monthStr)
             setDays(dayStr)
-    }, []);
+    }, [days]);
 
 
     
@@ -119,7 +119,7 @@ function Calendar() {
 
   return (
     <div>
-    <h1>Hello</h1>
+    <h3>Work in progress</h3>
     <div className='calendar'>
       {/* <div className='row'>
       </div> */}

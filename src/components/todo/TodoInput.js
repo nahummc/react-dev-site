@@ -13,6 +13,8 @@ const TodoInput = ({ todo, setTodo, addTodo }) => (
             setTodo(e.target.value);
           }}
         />
+
+        
         
         <button className="add-button" onClick={addTodo}>
           Add
