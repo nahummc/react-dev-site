@@ -106,7 +106,7 @@
 
 }
 
-@media  and (max-size:305) {
+@media screen and (max-size:305) {
     .calendar {
         width: auto;
     }
