@@ -72,8 +72,8 @@ function Calculator() {
     }
 // onClick={handleClick()}
   return (
-      <div class="calc-container">
-        <h1>Calculator</h1>
+      <div class="calc-container"> {/* i know a br tag is bad since they get evaluated differently by different browsers, but i cant get what i want otherwise*/}
+        <h1 className='calc-title'>Calculator-1000</h1><br />>
 
     
       <div class="calc-header"></div>
