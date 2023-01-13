@@ -105,18 +105,7 @@ function Calendar() {
         // console.log(days)
         // turn into a function to call and set state for days
         // make the inputs
-        let html = ""
-        for (let i = 1; i < days / 1 + 1; i++) {
-          // document.getElementsByClassName('days').write
-            html += `<input type="button" name="" value="${i}" class="day"/>`
-            // html += `<button type="button" name="" value="${i}" class="day">${i}</button>`
-
-            // console.log(html)
-        }
-
-          // insert inputs int html
-        const dayTag = document.getElementById("days")
-        dayTag.innerHTML = html
+        printDays(dayStr)
 
             setYear(yearStr)
             setMonth(monthStr)
@@ -239,6 +228,7 @@ function Calendar() {
               monthNumber--;
             }
         break;
+
         default:
         console.log(input)
         break;
@@ -250,17 +240,22 @@ function Calendar() {
       setYear(parseInt(year) + 1 + '')
       console.log(year + ' up a year')
       setMonth("January")
+    } else if (monthNumber < 0){
+      setMonth("December")
     } else {
       setMonth(getMonthString(monthNumber))
+
     }
 
     console.log(getDaysInMonth(month))
-
-    printDays(getDaysInMonth(month))
+// somehow this fixes the issue where the calendar prints the days of the month it was previuosly on
+    printDays(getDaysInMonth(getMonthString(monthNumber)))
 
     // console.log(monthNumber)
 
     }
+
+    
 
   return (
     <div className='calendar-wrapper'>
