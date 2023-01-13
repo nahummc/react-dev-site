@@ -64,6 +64,7 @@
 .day {
     border-radius: 3px;
     background-color: rgb(66, 164, 255);
+    margin: 1px;
 }
 
 .day:hover {
