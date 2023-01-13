@@ -12,6 +12,11 @@
 
 .change-year {
     border-radius: 10px;
+    
+}
+.change-year:hover {
+    background-color:rgb(187, 187, 187);
+
 }
 
 .row {
@@ -26,10 +31,10 @@
     margin-right: auto;
     margin-top: 3em;
 }
-/* 
-.title {
-    justify-content: center;
-    border: 2px solid black;
+
+/* .title {
+    justify-content: space-around;
+
 } */
 
 .year {
@@ -42,6 +47,7 @@
 
 .cal-btn:hover {
     background-color:rgb(205, 205, 205);
+    cursor: pointer;
 
 }
 
