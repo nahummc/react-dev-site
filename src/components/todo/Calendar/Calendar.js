@@ -237,6 +237,7 @@ function Calendar() {
 
     
     if (monthNumber > 11) {
+      monthNumber = 0
       setYear(parseInt(year) + 1 + '')
       console.log(year + ' up a year')
       setMonth("January")
