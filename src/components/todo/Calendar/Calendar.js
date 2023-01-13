@@ -260,6 +260,39 @@ function Calendar() {
       console.log("yay")
     }
 
+/*
+
+ADD LEAP YEAR FUNCTION
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
   return (
