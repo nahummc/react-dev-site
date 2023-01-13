@@ -255,6 +255,10 @@ function Calendar() {
 
     }
 
+    function showCalendar(e){
+      console.log("yay")
+    }
+
     
 
   return (
@@ -270,8 +274,8 @@ function Calendar() {
   <input type="button" onClick={handleClick} id='<' name="" value=">" class="goRight change-year"/>
       
       <div className='title'>
-        <h4 className='year'>{year}</h4>
-        <h4 className='month' id='month'>{month}</h4>
+        <h4 className='year cal-btn' id='year' onClick={showCalendar}>{year}</h4>
+        <h4 className='month cal-btn' onClick={showCalendar} id='month'>{month}</h4>
       </div>
       <br />
       <div className='days' id='days'>

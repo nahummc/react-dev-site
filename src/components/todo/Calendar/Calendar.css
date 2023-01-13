@@ -10,6 +10,10 @@
     /* justify-content: space-around; */
 }
 
+.change-year {
+    border-radius: 10px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -31,6 +35,13 @@
 .year {
     float: right;
     margin-right: 1em;
+    background-color:rgb(231, 231, 231);
+    padding: .3em .5em;
+    border-radius: 33px;
+}
+
+.cal-btn:hover {
+    background-color:rgb(205, 205, 205);
 
 }
 
@@ -38,6 +49,9 @@
 .month {
     float: left;
     margin-left: 1em;
+    background-color:rgb(231, 231, 231);
+    padding: .3em .5em;
+    border-radius: 33px;
 }
 
 .goLeft {
