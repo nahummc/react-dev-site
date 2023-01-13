@@ -264,7 +264,7 @@ function Calendar() {
 
   return (
     <div className='calendar-wrapper'>
-    <h3>Work in progress</h3>
+    {/* <h3>Work in progress</h3> */}
     <div className='calendar'>
       {/* <div className='row'>
       </div> */}
