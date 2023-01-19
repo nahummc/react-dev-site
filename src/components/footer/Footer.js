@@ -14,7 +14,7 @@ function Footer() {
         <p><a href="mailto:nahum.development@gmail.com">nahum.development@gmail.com</a></p>
         <div className='socials'>
           <SocialIcon className='social-btn grow' url="https://www.linkedin.com/in/nahum-collicott-594269200/"/>
-          <SocialIcon className='social-btn grow' url="https://twitter.com/NCollicott" />
+          <SocialIcon className='social-btn grow' url="https://twitter.com/nahumcollicott" />
           <SocialIcon className='social-btn grow' url="https://github.com/nahummc" />
           
 
